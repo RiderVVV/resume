@@ -278,6 +278,17 @@ h3 {
   font-weight: 700;
 }
 
+.project-link {
+  margin: 10px 0 4px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.project-link a {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
 .project-details {
   margin: 16px 0 0;
 }
