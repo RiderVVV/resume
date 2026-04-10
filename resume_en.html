@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lingxu Liu - Resume</title>
+    <style>
+      :root {
+        --text: #161616;
+        --muted: #4d4d4d;
+        --line: #d9d9d9;
+        --accent: #0f766e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        color: var(--text);
+        background: #ffffff;
+      }
+
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        padding: 14mm 14mm 16mm;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      .header {
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--text);
+      }
+
+      .name {
+        font-size: 31px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+      }
+
+      .headline {
+        margin-top: 6px;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .contact {
+        margin-top: 10px;
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .section {
+        margin-top: 16px;
+      }
+
+      .section-title {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding-bottom: 6px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .summary {
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .skills-grid {
+        display: grid;
+        gap: 8px;
+      }
+
+      .skill-row {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .skill-row strong {
+        display: inline-block;
+        min-width: 120px;
+      }
+
+      .entry {
+        margin-bottom: 14px;
+      }
+
+      .entry-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: baseline;
+      }
+
+      .entry-role {
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .entry-meta {
+        font-size: 12px;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .entry-sub {
+        margin-top: 2px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 8px 0 0 18px;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+        font-size: 12.5px;
+        line-height: 1.48;
+      }
+
+      .projects .entry {
+        margin-bottom: 12px;
+      }
+
+      .education-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 8px;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .education-row strong {
+        font-size: 13.5px;
+      }
+
+      @media print {
+        body {
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+
+        .page {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1 class="name">Lingxu Liu</h1>
+        <p class="headline">Applied AI and Agent Engineer | Backend Engineer</p>
+        <p class="contact">
+          Shenzhen, China | 13011068922 | 15344555700@163.com |
+          github.com/RiderVVV | ridervvv.github.io/resume
+        </p>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary">
+          Backend engineer with 8 years of experience building scalable systems
+          across IoT and education technology. Strong background in Golang,
+          distributed services, real-time data processing, and system
+          optimization. Currently focusing on applied AI, agent workflow
+          orchestration, and practical AI product development through
+          postgraduate study in Data Science and Machine Learning for Business.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <p class="skill-row">
+            <strong>Languages</strong> Python, Golang, SQL
+          </p>
+          <p class="skill-row">
+            <strong>AI / Data</strong> Machine Learning, Deep Learning, NLP,
+            Text Classification, Image Classification, Data Preprocessing,
+            Model Evaluation
+          </p>
+          <p class="skill-row">
+            <strong>Engineering</strong> Distributed Systems, RESTful APIs,
+            ETL Pipelines, Performance Optimization, Rule Engines, CI/CD
+          </p>
+          <p class="skill-row">
+            <strong>Tools</strong> PyTorch, pandas, scikit-learn, Spark,
+            Gradio, Git, Jupyter Notebook, TF-IDF, Logistic Regression,
+            ResNet18
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <article class="entry">
+          <div class="entry-top">
+            <p class="entry-role">Golang Developer | Wanjiaan IoT Technology</p>
+            <p class="entry-meta">Shenzhen | May 2021 - Apr 2024</p>
+          </div>
+          <p class="entry-sub">
+            Worked on AIoT cloud platform development within the SaaS team.
+          </p>
+          <ul>
+            <li>
+              Designed and implemented scalable backend services for IoT device
+              access, telemetry collection, and real-time data processing.
+            </li>
+            <li>
+              Built ETL pipelines and optimized concurrency, caching, and
+              distributed processing to improve throughput and platform
+              stability.
+            </li>
+            <li>
+              Developed rule-engine, automation, alerting, remote management,
+              and firmware upgrade capabilities for SaaS platform operations.
+            </li>
+            <li>
+              Improved security through authentication, authorization, and data
+              transmission enhancements.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <p class="entry-role">Golang Developer | Beijing Limi Technology</p>
+            <p class="entry-meta">Beijing | Sep 2016 - Mar 2021</p>
+          </div>
+          <p class="entry-sub">
+            Worked on education platform backend systems, including order,
+            product, user, and monitoring services.
+          </p>
+          <ul>
+            <li>
+              Designed and developed high-performance order services covering
+              creation, payment, cancellation, and refund flows.
+            </li>
+            <li>
+              Integrated third-party payment systems and implemented distributed
+              transaction handling for data consistency.
+            </li>
+            <li>
+              Built user management, course management, and monitoring features
+              for online education operations.
+            </li>
+            <li>
+              Improved scalability with microservices, containerization,
+              database tuning, caching, and message queues.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section projects">
+        <h2 class="section-title">Selected Projects</h2>
+
+        <article class="entry">
+          <div class="entry-top">
+            <p class="entry-role">AI Marketing Video Workflow</p>
+            <p class="entry-meta">2024 - 2025</p>
+          </div>
+          <ul>
+            <li>
+              Built an AI workflow to automate e-commerce marketing video
+              production across script generation, asset retrieval, and
+              rendering.
+            </li>
+            <li>
+              Focused on tool chaining, workflow integration, and backend
+              stability for multi-step generation.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <p class="entry-role">IoT Device Access Platform (IoTHub)</p>
+            <p class="entry-meta">2021 - 2024</p>
+          </div>
+          <ul>
+            <li>
+              Led backend architecture and implementation for a high-scale IoT
+              access platform supporting camera and device connectivity.
+            </li>
+            <li>
+              Reached 10 million+ terminal connections and close to 1 million
+              computation tasks per second.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-top">
+            <p class="entry-role">Alert and Notification System</p>
+            <p class="entry-meta">2021 - 2024</p>
+          </div>
+          <ul>
+            <li>
+              Designed a configurable rule-driven alerting system with
+              multi-channel notification support.
+            </li>
+            <li>
+              Reduced fault handling time by 30 percent with sub-second alert
+              generation and 99.9%+ notification delivery rate.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-row">
+          <div>
+            <strong>Lingnan University</strong><br />
+            MSc in Data Science
+          </div>
+          <div>Expected Jun 2026</div>
+        </div>
+        <div class="education-row">
+          <div>
+            <strong>Harbin University</strong><br />
+            Bachelor's in Accounting
+          </div>
+          <div>Jun 2016</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
