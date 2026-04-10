@@ -318,6 +318,10 @@ h3 {
   font-size: 1.02rem;
 }
 
+.resume-link-row {
+  margin: 20px 0 0;
+}
+
 @media (max-width: 920px) {
   .hero-grid,
   .two-column .content-grid,
